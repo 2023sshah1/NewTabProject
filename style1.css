@@ -1,0 +1,9 @@
+body {
+  background-color: aliceblue;
+  background-image: url("fusion.png");
+}
+
+img{
+  width: 100%;
+  height: 30em;
+}

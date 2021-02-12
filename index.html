@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>New Tab</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<div class="flex-container">
+		<div class="flex-left" id="time">
+			<p id="clock" style="font-family: 'Orbitron', sans-serif;"> Time </p>
+			<script>
+				setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            am_pm = "AM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min;   
+            let currentTime = hour + ":"  
+                + min + " " +am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime();
+			</script>
+      <p id="quickLink"> QUICK LINKS </p>
+			<div class="grid-container">
+				<a href="https://classroom.google.com/u/0/h" style="text-decoration: none;">
+					<div class="grid-child">
+						<img class="quick" src="classroom.svg"/>
+        <p class="desc"> Classroom </p>
+        </div></a>
+
+        <a href="https://fcps.blackboard.com/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_9_1" style="text-decoration: none;"><div class="grid-child">
+        <img class="quick" src="blackboard.png"/>
+        <p class="desc"> Blackboard </p>
+        </div></a>
+
+        <a href="https://mail.google.com/mail/u/0/" style="text-decoration: none;"><div class="grid-child">
+        <img class="quick" src="gmail.png"/>
+        <p class="desc"> Gmail </p>
+        </div></a>
+
+       <a href="https://ion.tjhsst.edu/" style="text-decoration: none;"><div class="grid-child">
+        <img class="quick" src="ion.png"/>
+        <p class="desc"> Ion </p>
+        </div></a>
+
+         <a href="https://sisstudent.fcps.edu/SVUE/PXP2_Login_Student_OVR.aspx?regenerateSessionId=True" style="text-decoration: none;"><div class="grid-child">
+        <img class="quick" src="studentVue.png"/>
+        <p class="desc"> StudentVue </p>
+        </div></a>
+
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSezCGHZ_Qz24MC-rZe2vY2LTM8lZRTgrBErs3eO3vS50mI-wA/closedform" style="text-decoration: none;"><div class="grid-child">
+        <img class="quick" src="forms.png"/>
+        <p class="desc"> Monday </p>
+        </div></a>
+
+			</div>
+		</div>
+		<div class="flex-right">
+			<div class="flex-child">
+				<button type="button"onclick="webSite()" id="button0" class="buttons">AP CompSci</button>
+  <script>
+    function webSite(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/9fe21a215c8345a8b3b87307581d7454"
+    }
+    </script>
+    <button type="button"onclick="webSite1()" id="button1"class="buttons">Latin</button>
+  <script>
+    function webSite1(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/56eb3baa4bb14f008e3acc81da511d68"
+    }
+    </script>
+     <button type="button"onclick="webSite2()" id="button2"class="buttons">Health & PE</button>
+  <script>
+    function webSite2(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/a74438630f12411da6254040b7eab626"
+    }
+    </script>
+    <button type="button"onclick="webSite3()" id="button3"class="buttons">AB Calculus</button>
+  <script>
+    function webSite3(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/d2a545f29a6a45d4998e05a716543060"
+    }
+    </script>
+    <button type="button"onclick="webSite4()" id="button4"class="buttons">Chemistry</button>
+  <script>
+    function webSite4(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/ae8cdd6a4b36430ea70fd7eed72eec7c"
+    }
+    </script>
+    <button type="button"onclick="webSite5()" id="button5"class="buttons">English</button>
+  <script>
+    function webSite5(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/c069940260d34bb7909f025293403816"
+    }
+    </script>
+    <button type="button"onclick="webSite6()" id="button6"class="buttons">World History</button>
+  <script>
+    function webSite6(){
+      document.getElementById("frame").src = "https://us.bbcollab.com/invite/8fca9558de5946fc80c19e22bdf547e6"
+    }
+    </script>
+    </div>
+  <div class="flex-child">
+  <iframe src="default.html" title="BB Collab" id="frame" width="500em" height="500em"></iframe>
+  </div>
+  </div>
+  </div>
+  <script> classDays() </script>
+  </body>
+</html>
